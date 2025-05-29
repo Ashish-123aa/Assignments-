@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Layout</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 250px;
+      
+      background: linear-gradient(to bottom, #f29c28, #f4b965);
+      border-radius: 100px 100px 20px 20px;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .box {
+      margin: 30px 30px;
+      padding: 20px 0;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 5px;
+    }
+
+    .mca { background-color: #d32f2f; }   /* Red */
+    .bca { background-color: #fdd835; color: #333; }   /* Yellow */
+    .bba { background-color: #388e3c; }   /* Green */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box mca">MCA</div>
+    <div class="box bca">BCA</div>
+    <div class="box bba">BBA</div>
+  </div>
+</body>
+</html>
