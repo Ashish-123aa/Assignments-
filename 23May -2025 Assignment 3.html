@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 40px;
+    }
+
+    .container {
+      display: flex;
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .left {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .left img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .right {
+      flex: 2;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid maroon;
+      padding-bottom: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .inline {
+      display: inline-block;
+      width: 48%;
+    }
+
+    .gender {
+      margin-top: 5px;
+    }
+
+    .checkbox {
+      margin-top: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: maroon;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <img src="https://images.unsplash.com/photo-1580281657527-27a69c71a3a9?auto=format&fit=crop&w=800&q=80" alt="Doctor">
+
+
+  </div>
+
+  <div class="right">
+    <h2>Doctor Appointment Form</h2>
+    <form>
+      <label>Appointment Date:</label>
+      <input type="date">
+
+      <label>Appointment Time:</label>
+      <input type="time">
+
+      <label>Name:</label>
+      <div class="inline">
+        <input type="text" placeholder="First">
+      </div>
+      <div class="inline" style="float: right;">
+        <input type="text" placeholder="Last">
+      </div>
+      <div style="clear: both;"></div>
+
+      <label>Gender:</label>
+      <div class="gender">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+      </div>
+
+      <label>Phone:</label>
+      <input type="tel">
+
+      <label>Address:</label>
+      <div class="inline">
+        <input type="text" placeholder="City">
+      </div>
+      <div class="inline" style="float: right;">
+        <input type="text" placeholder="State">
+      </div>
+      <div style="clear: both;"></div>
+
+      <label>Your Query:</label>
+      <textarea rows="4"></textarea>
+
+      <label>Appointment Type:</label>
+      <div class="checkbox">
+        <input type="checkbox"> Cervix checkup<br>
+        <input type="checkbox"> Heart checkup<br>
+        <input type="checkbox"> Eye check-up<br>
+        <input type="checkbox"> Hearing Test<br>
+      </div>
+
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
