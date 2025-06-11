@@ -1,1 +1,1 @@
-All submissions for my Ethnus MERN stack training.
+All submissions here are for my Ethnus MERN stack training.
